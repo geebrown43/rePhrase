@@ -5,6 +5,13 @@ import Funny from './Funny'
 import {Button, Icon} from 'native-base'
 
 class HomeScreen extends React.Component{
+    constructor(props){
+        super(props)
+        this.state ={
+            camera: false
+        }
+    }
+    
     static navigationOptions = {
         title: 'Home',
         headerTitleStyle: {
@@ -22,7 +29,7 @@ class HomeScreen extends React.Component{
         ),
         headerLeft: (
             <Button  transparent
-              onPress={() => alert('This is a button!')} style={{marginLeft: 10}}>
+              onPress={() => alert('clicked')} style={{marginLeft: 10}}>
               <Icon name='camera' style={{color: 'black', margin: 10}}/>
               </Button>
         )
