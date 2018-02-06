@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Landing from './components/Landing'
 import { Font } from 'expo'
+import Home from './components/HomeScreen'
 
 
 export default class App extends React.Component {
@@ -26,7 +27,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         {this.state.fontLoaded ? <Landing _homescreen={this._homescreen}/> : null}
-        {this.state.homeScreen}
+        {this.state.homeScreen? <Home/> : null}
       </View>
     );
   }
