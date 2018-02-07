@@ -6,8 +6,8 @@ export default class Funny extends React.Component {
     static navigationOptions = {
         title: 'Funny',
         headerTitleStyle:{
-            fontFamily: 'Open',
-            fontSize: 22
+            fontFamily: 'Mono',
+            fontSize: 36
         }
     }
     render(){
