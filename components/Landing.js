@@ -14,7 +14,7 @@ class Landing extends React.Component {
                 </View>
 
                 <View>
-                    <Button iconLeft success small onPress={this.props._homescreen} style={{padding: 10, marginTop: 20}}><Icon name='happy'/><Text style={styles.buttonSpacing}>Enter</Text></Button>
+                    <Button iconLeft  small onPress={this.props._homescreen} style={{padding: 10, marginTop: 20}}><Icon name='happy'/><Text style={styles.buttonSpacing}>Enter</Text></Button>
                 </View>
             </View>
         )
