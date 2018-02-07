@@ -5,14 +5,18 @@ import { StackNavigator} from 'react-navigation'
 export default class Funny extends React.Component {
     static navigationOptions = {
         title: 'Funny',
+        headerStyle:{
+            backgroundColor: 'rgb(90, 179, 152)'
+          },
         headerTitleStyle:{
             fontFamily: 'Mono',
-            fontSize: 36
+            fontSize: 40,
+            color:'white'
         }
     }
     render(){
         return (
-            <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+            <View style={{flex: 1, backgroundColor: 'white'}}>
                 <Text>Funny</Text>
             </View>
         )
