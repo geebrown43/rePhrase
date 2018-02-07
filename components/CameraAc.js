@@ -13,6 +13,11 @@ export default class CameraExample extends React.Component {
     this.setState({ hasCameraPermission: status === 'granted' });
   }
 
+  takePicture = async = (e) => {
+    console.log(this)
+    if(this.camera){this.camera.takePictureAsync().then(data => console.log(data))}
+  }
+
   render() {
     const { hasCameraPermission } = this.state;
     if (hasCameraPermission === null) {
@@ -46,6 +51,9 @@ export default class CameraExample extends React.Component {
                   style={{ fontSize: 18, marginBottom: 10, color: 'white' }}>
                   {' '}Flip{' '}
                 </Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={(e) => this.takePicture(e)}>
+                <Text>Snap</Text>
               </TouchableOpacity>
             </View>
           </Camera>
