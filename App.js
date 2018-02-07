@@ -3,7 +3,6 @@ import { StyleSheet, View } from 'react-native';
 import Landing from './components/Landing'
 import { Font } from 'expo'
 import Home from './components/HomeScreen';
-import Camera from './components/CameraAc'
 
 
 export default class App extends React.Component {
@@ -30,7 +29,6 @@ export default class App extends React.Component {
       <View style={styles.container}>
         {this.state.fontLoaded ? <Landing _homescreen={this._homescreen}/> : null}
         {this.state.homeScreen? <Home _cameraActive={this._cameraActive}/> : null}
-        {this.state.cameraActive? <Camera/> : null}
       </View>
     );
   }
