@@ -10,7 +10,6 @@ export default class App extends React.Component {
   state ={
     fontLoaded: false,
     homeScreen:false,
-    cameraActive:false
   }
  async componentDidMount() {
     await Font.loadAsync({
@@ -23,9 +22,7 @@ export default class App extends React.Component {
   _homescreen = () => {
     this.setState({fontLoaded: false, homeScreen: true})
   }
-  _cameraActive = () => {
-    this.setState({cameraActive: true})
-  }
+  
 
 
   render() {
