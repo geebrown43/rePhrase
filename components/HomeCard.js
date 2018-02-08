@@ -31,7 +31,7 @@ export default class HomeCard extends React.Component{
                       source={require("../assets/images/pencils.jpeg")}
                       style={{ height: 200, width: 330, flex: 1 }}
                     />
-                    <Text>Welcome to RePhrase! Lets Edit some text:</Text>
+                    <Text style={styles.subject}>Welcome to RePhrase! Lets Edit some text:</Text>
                   </Body>
                 </CardItem>
                 <CardItem>
@@ -49,6 +49,10 @@ export default class HomeCard extends React.Component{
 
 const styles = StyleSheet.create({
     header:{
-        fontSize: 20
+        fontSize: 20,
+        fontFamily: 'Titi'
+    },
+    subject: {
+      fontFamily: 'Titi'
     }
 })
