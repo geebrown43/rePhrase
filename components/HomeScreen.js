@@ -9,7 +9,8 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import Funny from "./Funny";
 import Camera from "./CameraAc";
 import Loving from "./Loving";
-import Card from './HomeCard'
+import Card from './HomeCard';
+import Serious from './Serious'
 
 class HomeScreen extends React.Component {
   state = {
@@ -27,14 +28,16 @@ class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
     return {
-      title: "Home",
+      title: "r3phr@$e",
       headerStyle: {
-        backgroundColor: "rgb(90, 179, 152)"
+        backgroundColor: "rgb(112, 176, 153)"
       },
       headerTitleStyle: {
-        fontFamily: "Mono",
-        fontSize: 40,
-        color: "white"
+        fontFamily: "Pacifico",
+        fontSize: 28,
+        color: "white",
+        marginBottom: 17,
+        padding: 5
       },
       headerBackTitle: "back",
       headerRight: (
@@ -85,6 +88,9 @@ const LovingStack = StackNavigator({
   Loving: { screen: Loving }
 });
 
+const SeriousStack = StackNavigator({
+  Serious: {screen: Serious}
+})
 const styles = StyleSheet.create({
   heading: {
     fontSize: 36,
@@ -96,7 +102,8 @@ export default TabNavigator(
   {
     Home: { screen: HomeStack },
     Funny: { screen: FunnyStack },
-    Loving: { screen: LovingStack }
+    Loving: { screen: LovingStack },
+    Serious: { screen: SeriousStack}
   },
   {
     navigationOptions: ({ navigation }) => ({
@@ -109,6 +116,8 @@ export default TabNavigator(
           iconName = `ios-happy${focused ? "" : "-outline"}`;
         } else if (routeName === "Loving") {
           iconName = `ios-heart${focused ? "" : "-outline"}`;
+        } else if (routeName === 'Serious') {
+          iconName = `ios-ionitron${focused ? '' : '-outline'}`
         }
         return <Ionicons name={iconName} size={25} color={tintColor} />;
       }
@@ -120,11 +129,12 @@ export default TabNavigator(
       activeTintColor: "white",
       inactiveTintColor: "white",
       style: {
-        backgroundColor: "rgb(90, 179, 152)"
-      }
+        backgroundColor: "rgb(112, 176, 153)"
+      },
+      showLabel: false
     },
     animationEnabled: false,
-    swipeEnabled: false,
-    showLabel: false
+    swipeEnabled: true,
+   
   }
 );
