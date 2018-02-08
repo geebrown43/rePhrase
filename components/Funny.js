@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, ScrollView, StyleSheet} from 'react-native'
 import { StackNavigator} from 'react-navigation'
 
 export default class Funny extends React.Component {
@@ -19,8 +19,18 @@ export default class Funny extends React.Component {
     render(){
         return (
             <View style={{flex: 1, backgroundColor: "rgb(233, 233,240)"}}>
-                <Text>Funny</Text>
+              <ScrollView style={{margin: 10, backgroundColor: 'white', borderRadius: 10}}>
+                  <Text style={styles.header}>Funny</Text>
+              </ScrollView>
             </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    header: {
+        textAlign: 'center',
+        fontFamily: 'Open',
+        fontSize: 32
+    }
+})
