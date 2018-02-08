@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, StyleSheet} from 'react-native'
 import { StackNavigator} from 'react-navigation'
 
 export default class Serious extends React.Component {
@@ -19,8 +19,22 @@ export default class Serious extends React.Component {
     render(){
         return (
             <View style={{flex: 1,backgroundColor: "rgb(233, 233,240)"}}>
-                <Text>Serious</Text>
+            <Text style={styles.header}>Serious</Text>
+            <View style={{flex: 1, margin: 10, backgroundColor: 'white', borderRadius: 1.5, borderWidth: 0.16, borderColor: 'black', shadowColor: 'black', shadowOffset:{width: 0 , height: 2}, shadowOpacity: 0.2}}>
+                
+              </View>
+              <View style={{flex: 1, margin: 10, backgroundColor: 'white', borderRadius: 1.5, borderWidth: 0.16, borderColor: 'black', shadowColor: 'black', shadowOffset:{width: 0 , height: 2}, shadowOpacity: 0.2}}>
+                 
+              </View>
             </View>
         )
     }
 }
+const styles = StyleSheet.create({
+    header: {
+        textAlign: 'center',
+        fontSize: 32,
+        fontFamily: 'Titi',
+        color: "rgb(112, 176, 153)"
+    }
+})
