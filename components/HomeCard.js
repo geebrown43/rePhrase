@@ -29,7 +29,7 @@ export default class HomeCard extends React.Component{
                   <Body>
                     <Image
                       source={require("../assets/images/pencils.jpeg")}
-                      style={{ height: 200, width: 370, flex: 1 }}
+                      style={{ height: 200, width: 330, flex: 1 }}
                     />
                     <Text>Welcome to RePhrase! Lets Edit some text:</Text>
                   </Body>
