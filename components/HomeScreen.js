@@ -23,6 +23,7 @@ class HomeScreen extends React.Component {
   _cameraActive = () => {
     this.setState({ camera: !this.state.camera, home: !this.state.home });
   };
+
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
     return {
@@ -117,7 +118,7 @@ export default TabNavigator(
     tabBarPosition: "bottom",
     tabBarOptions: {
       activeTintColor: "white",
-      inactiveTintColor: "purple",
+      inactiveTintColor: "white",
       style: {
         backgroundColor: "rgb(90, 179, 152)"
       }
