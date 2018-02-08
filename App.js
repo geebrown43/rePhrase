@@ -13,8 +13,9 @@ export default class App extends React.Component {
  async componentDidMount() {
     await Font.loadAsync({
       Mono: require('./assets/fonts/Monofett.ttf'),
-      Open: require('./assets/fonts/OpenSans-SemiBoldItalic.ttf'),
-      Pacifico: require('./assets/fonts/Pacifico-Regular.ttf')
+      Titi: require('./assets/fonts/TitilliumWeb-Light.ttf'),
+      Pacifico: require('./assets/fonts/Pacifico-Regular.ttf'),
+      Josefin: require('./assets/fonts/JosefinSlab-Regular.ttf')
     })
     this.setState({fontLoaded:true})
   }
