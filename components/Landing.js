@@ -14,7 +14,7 @@ class Landing extends React.Component {
                 </View>
 
                 <View>
-                    <Button iconLeft  small onPress={this.props._homescreen} style={{padding: 10, marginTop: 20}}><Icon name='happy'/><Text style={styles.buttonSpacing}>Enter</Text></Button>
+                    <Button iconLeft light onPress={this.props._homescreen} style={{padding: 10, marginTop: 20}}><Icon name='happy' style={{color: 'rgb(112, 176, 153)'}}/><Text style={styles.buttonSpacing}>Enter</Text></Button>
                 </View>
             </View>
         )
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 60,
         fontFamily: 'Pacifico',
-        margin: 10,
+        marginBottom: 20,
         color: 'white'
     },
     subtitle: {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     buttonSpacing:{
         margin:10,
         fontSize: 16,
-        color: 'white'
+        color: 'rgb(112, 176, 153)'
     }
 })
 
