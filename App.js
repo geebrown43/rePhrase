@@ -13,7 +13,8 @@ export default class App extends React.Component {
  async componentDidMount() {
     await Font.loadAsync({
       Mono: require('./assets/fonts/Monofett.ttf'),
-      Open: require('./assets/fonts/OpenSans-SemiBoldItalic.ttf')
+      Open: require('./assets/fonts/OpenSans-SemiBoldItalic.ttf'),
+      Pacifico: require('./assets/fonts/Pacifico-Regular.ttf')
     })
     this.setState({fontLoaded:true})
   }
