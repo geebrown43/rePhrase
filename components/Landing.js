@@ -23,20 +23,23 @@ class Landing extends React.Component {
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 70,
-        fontFamily: 'Mono',
-        margin: 10
+        fontSize: 60,
+        fontFamily: 'Pacifico',
+        margin: 10,
+        color: 'white'
     },
     subtitle: {
         textAlign: 'center',
         fontFamily: 'Open',
-        fontSize: 20
+        fontSize: 20,
+        color: 'purple'
     },
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         height: height,
+        backgroundColor: "rgb(112, 176, 153)"
     },
     header: {
         justifyContent: 'space-between',
