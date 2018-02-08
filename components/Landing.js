@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     subtitle: {
         textAlign: 'center',
-        fontFamily: 'Open',
+        fontFamily: 'Titi',
         fontSize: 20,
         color: 'purple'
     },
