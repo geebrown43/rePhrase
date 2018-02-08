@@ -11,6 +11,7 @@ import Camera from "./CameraAc";
 import Loving from "./Loving";
 import Card from './HomeCard';
 import Serious from './Serious'
+import User from './User'
 
 class HomeScreen extends React.Component {
   state = {
@@ -91,6 +92,10 @@ const LovingStack = StackNavigator({
 const SeriousStack = StackNavigator({
   Serious: {screen: Serious}
 })
+
+const UserStack = StackNavigator({
+  User:{screen: User}
+})
 const styles = StyleSheet.create({
   heading: {
     fontSize: 36,
@@ -102,6 +107,7 @@ export default TabNavigator(
   {
     Home: { screen: HomeStack },
     Funny: { screen: FunnyStack },
+    User: {screen: UserStack},
     Loving: { screen: LovingStack },
     Serious: { screen: SeriousStack}
   },
@@ -118,6 +124,8 @@ export default TabNavigator(
           iconName = `ios-heart${focused ? "" : "-outline"}`;
         } else if (routeName === 'Serious') {
           iconName = `ios-ionitron${focused ? '' : '-outline'}`
+        } else if (routeName === 'User') {
+          iconName = `ios-contact${focused ? '': '-outline'}`
         }
         return <Ionicons name={iconName} size={25} color={tintColor} />;
       }
