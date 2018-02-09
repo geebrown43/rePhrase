@@ -4,13 +4,13 @@ import { StackNavigator } from 'react-navigation'
 
 export default class Funny extends React.Component {
     static navigationOptions = {
-        title: 'r3phr@$e',
+        title: 'Profile',
         headerStyle: {
             backgroundColor: "rgb(112, 176, 153)"
         },
         headerTitleStyle: {
             fontFamily: 'Pacifico',
-            fontSize: 28,
+            fontSize: 30,
             color: 'white',
             marginBottom: 17,
             padding: 5
