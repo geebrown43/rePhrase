@@ -41,7 +41,7 @@ export default class Funny extends React.Component {
           <Text
             style={{
               fontSize: 28,
-              fontFamily: "Titi",
+              fontFamily: "Titi",     
               color: "rgb(112, 176, 153)",
               textAlign: "center"
             }}
